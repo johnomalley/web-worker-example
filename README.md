@@ -1,3 +1,5 @@
-# Example Redux UI
+# Example Web Worker Project
 
-This project is just a basic skeleton for a React/Redux UI.
+Uses webpack to create a main bundle and a web worker bundle.
+  
+The worker uses the [Leibniz formula](https://en.wikipedia.org/wiki/Leibniz_formula_for_%CF%80) to estimate Π. 

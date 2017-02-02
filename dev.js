@@ -1,7 +1,6 @@
 const express = require('express')
 const devMiddleware = require('webpack-dev-middleware')
 const hotMiddleware = require('webpack-hot-middleware')
-const lessMiddleware = require('less-middleware')
 const webpack = require('webpack')
 
 const config = (() => {
@@ -44,5 +43,4 @@ module.exports = app => {
     noInfo: true
   }))
   app.use(hotMiddleware(compiler))
-  app.use(lessMiddleware('css', {dest: 'public'}))
 }
